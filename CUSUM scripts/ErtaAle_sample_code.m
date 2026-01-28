@@ -1,4 +1,8 @@
-%%
+%% Main Demo script:
+% Author: J. Gosling | Updated: 28 Jan. 2026
+
+%% Load in CSK SAR data
+addpath('/Users/vm22884/ErtaAle-main/') % <- Change this to loaction of 'ErtaAle-main' folder
 load("ErtaAle_CSKsampleData_PCAcorrected.mat")
 load("ErtaAle_sampleData_variance.mat")
 %% Dataset details and formatting
@@ -59,13 +63,14 @@ title('Pixel locations')
 axis image
 
 figure(2)
+Pixel2plot = [1,7];
 subplot(1,2,1); title(gca,'PCA corrected time series');
-plot(dates,PCAts([1,7],:),'-o','MarkerSize', 5, 'LineWidth', 1.5);
+plot(dates,PCAts(Pixel2plot,:),'-o','MarkerSize', 5, 'LineWidth', 1.5);
 hold on
-plot(dates,ts([1,7],:),'--o','MarkerSize', 5, 'LineWidth', 1.5,'HandleVisibility','off');
+plot(dates,ts(Pixel2plot,:),'--o','MarkerSize', 5, 'LineWidth', 1.5,'HandleVisibility','off');
 colororder(gca,c2);grid on
 plot([eruptStart eruptStart], ylim, 'r--', 'LineWidth', 1.5);
-legend(gca,'1','7','Eruption start');xtickangle(60)
+legend(gca,string(Pixel2plot(1)),Pixel2plot(2)),'Eruption start');xtickangle(60)
 
 subplot(1,2,2); title(gca,'CUSUM plot');
 h=plot(dates, uppersum, 'o', 'MarkerSize', 5, 'LineWidth', 1.5);
