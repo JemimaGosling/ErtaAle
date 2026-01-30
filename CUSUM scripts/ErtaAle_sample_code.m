@@ -70,7 +70,8 @@ hold on
 plot(dates,ts(Pixel2plot,:),'--o','MarkerSize', 5, 'LineWidth', 1.5,'HandleVisibility','off');
 colororder(gca,c2);grid on
 plot([eruptStart eruptStart], ylim, 'r--', 'LineWidth', 1.5);
-legend(gca,string(Pixel2plot(1)),Pixel2plot(2),'Eruption start');xtickangle(60)
+legend(gca,string(Pixel2plot(1)),string(Pixel2plot(2)),'Eruption start') ;xtickangle(60)
+
 
 subplot(1,2,2); title(gca,'CUSUM plot');
 h=plot(dates, uppersum, 'o', 'MarkerSize', 5, 'LineWidth', 1.5);
