@@ -11,7 +11,7 @@ These are MATLAB script. The main script (_ErtaAle_sample_code.m_) in CUSUM scri
 - Loads in pre-processed SAR backscatter images and variance dataset.
 - The number of SAR images used for the CUSUM baseline is defined on **Line 13**
 - Constructs data matrix and date list used in analysis
-- Runs CUSUM on individual pixels using the _cusumSingle.m_ script. The pixels are determined manually selected by user on **lines 41 and 42**.
+- Runs CUSUM on individual pixels using the _cusumSingle.m_ script. Individual pixels are manually selected by user on **lines 36 and 37**.
 - This section produces the two following figures (that were used to create Fig. 5 in paper):
 
 ![Figure1](https://github.com/JemimaGosling/ErtaAle/blob/main/sample%20data/DEMO_Figure_1.png)
