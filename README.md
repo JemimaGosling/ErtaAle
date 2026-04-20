@@ -9,7 +9,7 @@ SAR backscatter lava flow processing, analysis and detection for the 2017 Erta '
 # Running scripts
 These are MATLAB script. The main script (_ErtaAle_sample_code.m_) in CUSUM script does the following: 
 - Loads in pre-processed SAR backscatter images and variance dataset.
-- The number of SAR images used for the CUSUM baseline is defined on **Line 18**
+- The number of SAR images used for the CUSUM baseline is defined on **Line 13**
 - Constructs data matrix and date list used in analysis
 - Runs CUSUM on individual pixels using the _cusumSingle.m_ script. The pixels are determined manually selected by user on **lines 41 and 42**.
 - This section produces the two following figures (that were used to create Fig. 5 in paper):
