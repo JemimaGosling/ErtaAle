@@ -1,6 +1,6 @@
 # Introduction
 
-SAR backscatter lava flow processing, analysis and detection for the 2017 Erta 'Ale lava flows. The method development and analysis are detailed fully in [Gosling et al., (Submitted)](https://www.researchsquare.com/article/rs-5003481/v1). This github contains:  
+SAR backscatter lava flow processing, analysis and detection for the 2017 Erta 'Ale lava flows. The method development and analysis are detailed fully in [Gosling et al., (2026)](https://link.springer.com/article/10.1007/s00445-026-01984-8). This github contains:  
 - **Manual flow boundaries:** Shapefiles contain the manually extracted flow maps for the individual SAR backscatter images.
 - **CUSUM scripts:** Main script (_ErtaAle_sample_code.m_) allows for recreation of processing and analysis shown in published paper. It allows user to load in pre-processed (multi-looked, radiometric terrain corrected and geocoded) CSK SAR backscatter images over Erta 'Ale, run further processing and the described automated flow extraction on individual pixels (_cusumSingle.m_) and for wider areas (_cusumArea.m_)
 - **Functions:** Additional functions needed to run demo script (_ErtaAle_sample_code.m_)
