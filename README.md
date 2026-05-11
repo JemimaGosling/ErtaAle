@@ -22,3 +22,6 @@ These are MATLAB script. The main script (_ErtaAle_sample_code.m_) in CUSUM scri
 
 - Next it runs CUSUM on the whole dataset. This creates the figure showing all CUSUM deviations and the number of image that change occured on. 
 ![Figure3](https://github.com/JemimaGosling/ErtaAle/blob/main/sample%20data/DEMO_Figure_3.png)
+
+# Zenodo release
+Data and files contained in this GitHub repository have been published to Zenodo following the Gosling at al., 2026 publication. Zenodo release: https://doi.org/10.5281/zenodo.20123281
